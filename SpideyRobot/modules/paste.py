@@ -1,6 +1,6 @@
 import requests
-from GreysonBot import dispatcher
-from GreysonBot.modules.disable import DisableAbleCommandHandler
+from SpideyRobot import dispatcher
+from SpideyRobot.modules.disable import DisableAbleCommandHandler
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
