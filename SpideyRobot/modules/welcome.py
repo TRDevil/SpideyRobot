@@ -4,8 +4,8 @@ import re
 import time
 from functools import partial
 from io import BytesIO
-import GreysonBot.modules.sql.welcome_sql as sql
-from GreysonBot import (
+import SpideyRobot.modules.sql.welcome_sql as sql
+from SpideyRobot import (
     DEV_USERS,
     LOGGER,
     OWNER_ID,
@@ -17,18 +17,18 @@ from GreysonBot import (
     dispatcher,
     JOIN_LOGGER
 )
-from GreysonBot.modules.helper_funcs.chat_status import (
+from SpideyRobot.modules.helper_funcs.chat_status import (
     is_user_ban_protected,
     user_admin,
 )
-from GreysonBot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from GreysonBot.modules.helper_funcs.msg_types import get_welcome_type
-from GreysonBot.modules.helper_funcs.string_handling import (
+from SpideyRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from SpideyRobot.modules.helper_funcs.msg_types import get_welcome_type
+from SpideyRobot.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
     markdown_parser,
 )
-from GreysonBot.modules.log_channel import loggable
-from GreysonBot.modules.sql.global_bans_sql import is_user_gbanned
+from SpideyRobot.modules.log_channel import loggable
+from SpideyRobot.modules.sql.global_bans_sql import is_user_gbanned
 from telegram import (
     ChatPermissions,
     InlineKeyboardButton,
@@ -286,7 +286,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
             # Welcome yourself
             elif new_mem.id == bot.id:
                 creator = None
-                if not GreysonBot.ALLOW_CHATS:
+                if not SpideyRobot.ALLOW_CHATS:
                     with suppress(BadRequest):
                          update.effective_message.reply_text(f"Groups are disabled for {bot.first_name}, I'm outta here.")
                     bot.leave_chat(update.effective_chat.id)
@@ -312,7 +312,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
                         parse_mode=ParseMode.HTML,
                     )
                 update.effective_message.reply_text(
-                    "Thanks for adding me! Join @GreysonChats for support.",
+                    "Thanks for adding me! Join @PigasusSupport for support.",
                     reply_to_message_id=reply,
                 )
                 continue
