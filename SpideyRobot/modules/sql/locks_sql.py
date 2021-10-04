@@ -3,7 +3,7 @@ import threading
 
 from sqlalchemy import Column, String, Boolean
 
-from GreysonBot.modules.sql import SESSION, BASE
+from SpideyRobot.modules.sql import SESSION, BASE
 
 
 class Permissions(BASE):
