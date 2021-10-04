@@ -6,18 +6,18 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-import GreysonBot.modules.sql.blacklist_sql as sql
-from GreysonBot import dispatcher, LOGGER
-from GreysonBot.modules.disable import DisableAbleCommandHandler
-from GreysonBot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from GreysonBot.modules.helper_funcs.extraction import extract_text
-from GreysonBot.modules.helper_funcs.misc import split_message
-from GreysonBot.modules.log_channel import loggable
-from GreysonBot.modules.warns import warn
-from GreysonBot.modules.helper_funcs.string_handling import extract_time
-from GreysonBot.modules.connection import connected
-from GreysonBot.modules.sql.approve_sql import is_approved
-from GreysonBot.modules.helper_funcs.alternate import send_message, typing_action
+import SpideyRobot.modules.sql.blacklist_sql as sql
+from SpideyRobot import dispatcher, LOGGER
+from SpideyRobot.modules.disable import DisableAbleCommandHandler
+from SpideyRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from SpideyRobot.modules.helper_funcs.extraction import extract_text
+from SpideyRobot.modules.helper_funcs.misc import split_message
+from SpideyRobot.modules.log_channel import loggable
+from SpideyRobot.modules.warns import warn
+from SpideyRobot.modules.helper_funcs.string_handling import extract_time
+from SpideyRobot.modules.connection import connected
+from SpideyRobot.modules.sql.approve_sql import is_approved
+from SpideyRobot.modules.helper_funcs.alternate import send_message, typing_action
 
 BLACKLIST_GROUP = 11
 
