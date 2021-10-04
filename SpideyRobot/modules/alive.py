@@ -1,8 +1,8 @@
 from telethon import events, Button, custom
 import re, os
-from GreysonBot.events import register
-from GreysonBot import telethn as tbot
-from GreysonBot import telethn as tgbot
+from SpideyRobot.events import register
+from SpideyRobot import telethn as tbot
+from SpideyRobot import telethn as tgbot
 PHOTO = "https://telegra.ph/file/1cd6d62ef6e8843e6b1cb.jpg"
 @register(pattern=("/alive"))
 async def awake(event):
@@ -16,4 +16,4 @@ async def awake(event):
   await tbot.send_file(event.chat_id, PHOTO, caption=PIKACHU,  buttons=BUTTON)
 
 
-__mod_name__ = "Alive⚜️"
+__mod_name__ = "Alive"
