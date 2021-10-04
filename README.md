@@ -52,7 +52,7 @@ If all works well, bot should send message to the **MESSAGE_DUMP** Group .
 
 ## Developer 💻 
 
-[![DCOWNER](https://img.shields.io/badge/DC-OWNER-blue+red?style=for-the-badge&logo=appveyor)](https://t.me/DreamerNo1) 
+[![DCOWNER](https://img.shields.io/badge/DC-OWNER-#FC575E?style=for-the-badge&logo=appveyor)](https://t.me/DreamerNo1) 
 
 ##### Powered by [@PigasusUpdates](https://telegram.dog/PigasusUpdates) 💖
 
