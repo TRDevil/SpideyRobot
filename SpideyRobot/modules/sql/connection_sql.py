@@ -4,7 +4,7 @@ from typing import Union
 
 from sqlalchemy import Column, String, Boolean, UnicodeText, Integer
 
-from GreysonBot.modules.sql import SESSION, BASE
+from SpideyRobot.modules.sql import SESSION, BASE
 
 
 class ChatAccessConnectionSettings(BASE):
