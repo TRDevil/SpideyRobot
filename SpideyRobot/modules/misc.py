@@ -1,6 +1,6 @@
-from GreysonBot.modules.helper_funcs.chat_status import user_admin
-from GreysonBot.modules.disable import DisableAbleCommandHandler
-from GreysonBot import dispatcher
+from SpideyRobot.modules.helper_funcs.chat_status import user_admin
+from SpideyRobot.modules.disable import DisableAbleCommandHandler
+from SpideyRobot import dispatcher
 
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram import ParseMode, Update
