@@ -1,6 +1,6 @@
 from enum import IntEnum, unique
 
-from GreysonBot.modules.helper_funcs.string_handling import button_markdown_parser
+from SpideyRobot.modules.helper_funcs.string_handling import button_markdown_parser
 from telegram import Message
 
 
