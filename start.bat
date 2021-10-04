@@ -1,4 +1,4 @@
 @echo off
-TITLE GreysonBot Robot
+TITLE SpideyRobot
 :: Enables virtual env mode and then starts Rika
-env\scripts\activate.bat && py -m GreysonBot
+env\scripts\activate.bat && py -m SpideyRobot
