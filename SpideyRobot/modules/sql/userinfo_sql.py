@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, Integer, UnicodeText
 
-from GreysonBot.modules.sql import SESSION, BASE
+from SpideyRobot.modules.sql import SESSION, BASE
 
 
 class UserInfo(BASE):
