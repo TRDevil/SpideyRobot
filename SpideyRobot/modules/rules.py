@@ -1,9 +1,9 @@
 from typing import Optional
 
-import GreysonBot.modules.sql.rules_sql as sql
-from GreysonBot import dispatcher
-from GreysonBot.modules.helper_funcs.chat_status import user_admin
-from GreysonBot.modules.helper_funcs.string_handling import markdown_parser
+import SpideyRobot.modules.sql.rules_sql as sql
+from SpideyRobot import dispatcher
+from SpideyRobot.modules.helper_funcs.chat_status import user_admin
+from SpideyRobot.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
