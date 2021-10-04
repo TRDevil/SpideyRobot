@@ -1,5 +1,5 @@
 from envparse import env
-from GreysonBot import LOGGER
+from SpideyRobot import LOGGER
 
 DEFAULTS = {
     "LOAD_MODULES": True,
