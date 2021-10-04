@@ -6,8 +6,8 @@ import time
 import uuid
 from io import BytesIO
 
-import SpideyRobotSpideyRobot.modules.sql.feds_sql as sql
-from SpideyRobotSpideyRobot import (
+import SpideyRobot.modules.sql.feds_sql as sql
+from SpideyRobot import (
     EVENT_LOGS,
     LOGGER,
     SUPPORT_CHAT,
