@@ -3,13 +3,13 @@
 ## Spidey Robot
 
 <p align='center'>
-  <img src="https://img.shields.io/github/forks/dcowner/SpideyRobot?style=flat-square" alt="Forks">
-  <img src="https://img.shields.io/github/stars/dcowner/SpideyRobot?style=flat-square" alt="Stars">
-  <img src="https://img.shields.io/github/issues/dcowner/SpideyRobot?style=flat-square" alt="Issues">
-  <img src="https://img.shields.io/github/license/dcowner/SpideyRobot?style=flat-square" alt="LICENSE">
-  <img src="https://img.shields.io/github/contributors/dcowner/SpideyRobot?style=flat-square" alt="Contributors">
-  <img src="https://img.shields.io/github/repo-size/dcowner/SpideyRobot?style=flat-square" alt="Repo Size">
-  <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/dcowner/SpideyRobot&amp;title=Profile%20Views" alt="Views">
+  <img src="https://img.shields.io/github/forks/dcownerno1/SpideyRobot?style=flat-square" alt="Forks">
+  <img src="https://img.shields.io/github/stars/dcownerno1/SpideyRobot?style=flat-square" alt="Stars">
+  <img src="https://img.shields.io/github/issues/dcownerno1/SpideyRobot?style=flat-square" alt="Issues">
+  <img src="https://img.shields.io/github/license/dcownerno1/SpideyRobot?style=flat-square" alt="LICENSE">
+  <img src="https://img.shields.io/github/contributors/dcownerno1/SpideyRobot?style=flat-square" alt="Contributors">
+  <img src="https://img.shields.io/github/repo-size/dcownerno1/SpideyRobot?style=flat-square" alt="Repo Size">
+  <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/dcownerno1/SpideyRobot&amp;title=Profile%20Views" alt="Views">
 </p>
 
 <p align="center">
@@ -29,7 +29,7 @@
 - Fully open-source
 - Frequently updated
 
-### You can easily find Greyson on Telegram .
+### You can easily find Spidey on Telegram .
 
 <p align='left'>
  <a href="https://telegram.dog/SpideyRobot"><img src="https://img.shields.io/badge/SpideyRobot-2CA5E0?style=for-the-badge&amp;logo=telegram&amp;logoColor=white" alt="Find on Telegram"></a></br></br>
@@ -37,7 +37,7 @@
 </p>
 
 ### Deploy to Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/dcowner/SpideyRobot)
+[(https://camo.githubusercontent.com/6979881d5a96b7b18a057083bb8aeb87ba35fc279452e29034c1e1c49ade0636/68747470733a2f2f7777772e6865726f6b7563646e2e636f6d2f6465706c6f792f627574746f6e2e737667)](https://heroku.com/deploy?template=https://github.com/dcownerno1/SpideyRobot)
 
 If all works well, bot should send message to the **MESSAGE_DUMP** Group .
 
@@ -52,7 +52,7 @@ If all works well, bot should send message to the **MESSAGE_DUMP** Group .
 
 ## Developer 💻 
 
-[![DCOWNER](https://img.shields.io/badge/DC-SAI-green?style=for-the-badge&logo=appveyor)](https://t.me/DreamerNo1) 
+[![DCOWNER](https://img.shields.io/badge/DC-OWNER-blue+red?style=for-the-badge&logo=appveyor)](https://t.me/DreamerNo1) 
 
 ##### Powered by [@PigasusUpdates](https://telegram.dog/PigasusUpdates) 💖
 
