@@ -1,11 +1,11 @@
-from GreysonBot import telethn as tbot
+from SpideyRobot import telethn as tbot
 import os
 import re
 import bs4
 import requests
 from telethon import types
 from telethon.tl import functions
-from GreysonBot.events import register
+from SpideyRobot.events import register
 
 langi = "en"
 
