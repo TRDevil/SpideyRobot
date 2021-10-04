@@ -1,2 +1,2 @@
-worker: python3 -m GreysonBot
+worker: python3 -m SpideyRobot
 ps:scale worker=1
