@@ -1,6 +1,6 @@
-from GreysonBot import telethn as tbot
+from SpideyRobot import telethn as tbot
 import os
-from GreysonBot.events import register
+from SpideyRobot.events import register
 import secureme
 
 @register(pattern="^/encrypt ?(.*)")
