@@ -1,8 +1,8 @@
 import time
 from telethon import events
 
-from GreysonBot import telethn
-from GreysonBot.modules.helper_funcs.telethn.chatstatus import (
+from SpideyRobot import telethn
+from SpideyRobot.modules.helper_funcs.telethn.chatstatus import (
     can_delete_messages,
     user_is_admin,
 )
