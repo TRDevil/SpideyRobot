@@ -1,9 +1,9 @@
 import os
 from time import sleep
 
-from GreysonBot import OWNER_ID, dispatcher
-from GreysonBot.modules.helper_funcs.extraction import extract_user
-from GreysonBot.modules.sql.users_sql import get_user_com_chats
+from SpideyRobot import OWNER_ID, dispatcher
+from SpideyRobot.modules.helper_funcs.extraction import extract_user
+from SpideyRobot.modules.sql.users_sql import get_user_com_chats
 from telegram import Update
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, Filters
