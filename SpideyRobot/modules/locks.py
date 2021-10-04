@@ -9,20 +9,20 @@ from telegram.utils.helpers import mention_html
 
 from alphabet_detector import AlphabetDetector
 
-import GreysonBot.modules.sql.locks_sql as sql
-from GreysonBot import dispatcher, DRAGONS, LOGGER
-from GreysonBot.modules.disable import DisableAbleCommandHandler
-from GreysonBot.modules.helper_funcs.chat_status import (
+import SpideyRobot.modules.sql.locks_sql as sql
+from SpideyRobotSpideyRobot import dispatcher, DRAGONS, LOGGER
+from SpideyRobot.modules.disable import DisableAbleCommandHandler
+from SpideyRobot.modules.helper_funcs.chat_status import (
     can_delete,
     is_user_admin,
     user_not_admin,
     is_bot_admin,
     user_admin,
 )
-from GreysonBot.modules.log_channel import loggable
-from GreysonBot.modules.connection import connected
-from GreysonBot.modules.sql.approve_sql import is_approved
-from GreysonBot.modules.helper_funcs.alternate import send_message, typing_action
+from SpideyRobot.modules.log_channel import loggable
+from SpideyRobot.modules.connection import connected
+from SpideyRobot.modules.sql.approve_sql import is_approved
+from SpideyRobot.modules.helper_funcs.alternate import send_message, typing_action
 
 ad = AlphabetDetector()
 
