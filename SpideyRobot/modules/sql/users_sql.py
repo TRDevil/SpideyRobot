@@ -1,7 +1,7 @@
 import threading
 
-from GreysonBot import dispatcher
-from GreysonBot.modules.sql import BASE, SESSION
+from SpideyRobot import dispatcher
+from SpideyRobot.modules.sql import BASE, SESSION
 from sqlalchemy import (
     Column,
     ForeignKey,
