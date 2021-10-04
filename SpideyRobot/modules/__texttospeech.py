@@ -73,3 +73,6 @@ async def _(event):
             event.chat_id, "k.mp3", voice_note=True, reply_to=reply_to_id
         )
         os.remove("k.mp3")
+
+
+#Spidey
