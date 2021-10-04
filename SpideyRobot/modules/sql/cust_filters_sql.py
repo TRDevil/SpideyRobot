@@ -2,8 +2,8 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, Boolean, Integer, distinct, func
 
-from GreysonBot.modules.helper_funcs.msg_types import Types
-from GreysonBot.modules.sql import BASE, SESSION
+from SpideyRobot.modules.helper_funcs.msg_types import Types
+from SpideyRobot.modules.sql import BASE, SESSION
 
 
 class CustomFilters(BASE):
