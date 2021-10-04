@@ -28,4 +28,4 @@ if '%errorlevel%' NEQ '0' (
 :: your commands begin from this point.
 :: stops the service and then starts it 
 net stop SpideyRobot
-net start SpideyRobot
+net start SpideyRobo
