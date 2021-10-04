@@ -90,14 +90,14 @@ async def lego(event):
     pointsize = 500
     fillcolor = "gold"
     shadowcolor = "blue"
-    font = ImageFont.truetype("./SpideyRobot/resources/The Amazing Spider-Man.ttf", 330)
+    font = ImageFont.truetype("./SpideyRobot/resources/The Amazing Spider-Man.ttf", 125)
     w, h = draw.textsize(text, font=font)
     h += int(h*0.21)
     image_width, image_height = img.size
     draw.text(((image_widthz-w)/2, (image_heightz-h)/2), text, font=font, fill=(255, 255, 255))
     x = (image_widthz-w)/2
     y= ((image_heightz-h)/2+6)
-    draw.text((x, y), text, font=font, fill="black", stroke_width=25, stroke_fill="yellow")
+    draw.text((x, y), text, font=font, fill="black", stroke_width=25, stroke_fill="#FBD72B")
     fname2 = "SpideyLogo.png"
     img.save(fname2, "png")
     await tbot.send_file(event.chat_id, fname2, caption="Made By @SpideyRobot, Join My Updates @PigasusUpdates")
@@ -130,14 +130,14 @@ async def lego(event):
     pointsize = 500
     fillcolor = "white"
     shadowcolor = "blue"
-    font = ImageFont.truetype("./SpideyRobot/resources/The Amazing Spider-Man.ttf", 1000)
+    font = ImageFont.truetype("./SpideyRobot/resources/The Amazing Spider-Man.ttf", 125)
     w, h = draw.textsize(text, font=font)
     h += int(h*0.21)
     image_width, image_height = img.size
     draw.text(((image_widthz-w)/2, (image_heightz-h)/2), text, font=font, fill=(255, 255, 255))
     x = (image_widthz-w)/2
     y= ((image_heightz-h)/2+6)
-    draw.text((x, y), text, font=font, fill="white", stroke_width=0, stroke_fill="white")
+    draw.text((x, y), text, font=font, fill="white", stroke_width=0, stroke_fill="#FBD72B")
     fname2 = "SpideyLogo.png"
     img.save(fname2, "png")
     await tbot.send_file(event.chat_id, fname2, caption="Made By @SpideyRobot")
