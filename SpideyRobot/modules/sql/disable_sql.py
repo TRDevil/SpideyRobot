@@ -1,6 +1,6 @@
 import threading
 
-from GreysonBot.modules.sql import BASE, SESSION
+from SpideyRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Column, String, UnicodeText, distinct, func
 
 
