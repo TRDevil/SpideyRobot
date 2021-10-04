@@ -5,7 +5,7 @@ import re
 from sys import argv
 from typing import Optional
 
-from GreysonBot import (
+from SpideyRobot import (
     ALLOW_EXCL,
     CERT_PATH,
     MAINTAINER_LINK,
@@ -27,9 +27,9 @@ from GreysonBot import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from GreysonBot.modules import ALL_MODULES
-from GreysonBot.modules.helper_funcs.chat_status import is_user_admin
-from GreysonBot.modules.helper_funcs.misc import paginate_modules
+from SpideyRobot.modules import ALL_MODULES
+from SpideyRobot.modules.helper_funcs.chat_status import is_user_admin
+from SpideyRobot.modules.helper_funcs.misc import paginate_modules
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
@@ -135,7 +135,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("GreysonBot.modules." + module_name)
+    imported_module = importlib.import_module("SpideyRobot.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -387,7 +387,7 @@ def Masha_about_callback(update: Update, context: CallbackContext):
                  ❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  ❍ I check for admins' permissions before executing any command and more stuffs
                  \n_Emcee's licensed under the GNU General Public License v3.0_
-                 Here is the [💾Repository](https://t.me/PigasusSupport).
+                 Here is the [💾Repository](https://github.com/DCOwnerNo1/SpideyRobot).
                  If you have any question about Lovely, let us know at @PigasusSupport.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -415,7 +415,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
     if query.data == "source_":
         query.message.edit_text(
             text=""" Hi..🤗 I'm *Spidey*
-                 \nHere is the [Source Code](https://t.me/PigasusSupport) .""",
+                 \nHere is the [Source Code](https://github.com/DCOwnerNo1/SpideyRobot) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
@@ -662,7 +662,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1677365574 and DONATION_LINK:
+        if OWNER_ID != 1788127605 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
