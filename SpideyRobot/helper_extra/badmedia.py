@@ -1,4 +1,4 @@
-from GreysonBot import telethn as tbot
+from SpideyRobot import telethn as tbot
 import requests
 import time
 
