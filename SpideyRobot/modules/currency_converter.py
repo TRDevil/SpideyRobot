@@ -1,5 +1,5 @@
 import requests
-from GreysonBot import CASH_API_KEY, dispatcher
+from SpideyRobot import CASH_API_KEY, dispatcher
 from telegram import Update, ParseMode
 from telegram.ext import CallbackContext, CommandHandler, run_async
 
