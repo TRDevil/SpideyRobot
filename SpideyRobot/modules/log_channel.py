@@ -3,7 +3,7 @@ from functools import wraps
 
 from telegram.ext import CallbackContext
 
-from GreysonBot.modules.helper_funcs.misc import is_module_loaded
+from SpideyRobot.modules.helper_funcs.misc import is_module_loaded
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
@@ -13,9 +13,9 @@ if is_module_loaded(FILENAME):
     from telegram.ext import CommandHandler, JobQueue, run_async
     from telegram.utils.helpers import escape_markdown
 
-    from GreysonBot import EVENT_LOGS, LOGGER, dispatcher
-    from GreysonBot.modules.helper_funcs.chat_status import user_admin
-    from GreysonBot.modules.sql import log_channel_sql as sql
+    from SpideyRobot import EVENT_LOGS, LOGGER, dispatcher
+    from SpideyRobot.modules.helper_funcs.chat_status import user_admin
+    from SpideyRobot.modules.sql import log_channel_sql as sql
 
     def loggable(func):
         @wraps(func)
