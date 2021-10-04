@@ -3,14 +3,14 @@ from io import BytesIO
 import random
 from typing import Optional
 
-import GreysonBot.modules.sql.notes_sql as sql
-from GreysonBot import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
-from GreysonBot.modules.disable import DisableAbleCommandHandler
-from GreysonBot.modules.helper_funcs.handlers import MessageHandlerChecker
-from GreysonBot.modules.helper_funcs.chat_status import user_admin, connection_status
-from GreysonBot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from GreysonBot.modules.helper_funcs.msg_types import get_note_type
-from GreysonBot.modules.helper_funcs.string_handling import (
+import SpideyRobot.modules.sql.notes_sql as sql
+from SpideyRobot import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
+from SpideyRobot.modules.disable import DisableAbleCommandHandler
+from SpideyRobot.modules.helper_funcs.handlers import MessageHandlerChecker
+from SpideyRobot.modules.helper_funcs.chat_status import user_admin, connection_status
+from SpideyRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from SpideyRobot.modules.helper_funcs.msg_types import get_note_type
+from SpideyRobot.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
 )
 from telegram import (
