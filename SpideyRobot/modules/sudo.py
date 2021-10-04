@@ -1,84 +1,63 @@
-import html
+import asyncio
+import os
+import subprocess
+import time
 
-from typing import List
+import psutil
+from pyrogram import filters
 
-from telegram import Update, Bot
-from telegram.ext import CommandHandler, Filters
-from telegram.ext.dispatcher import run_async
+from SpideyRobot import (bot_start_time, DEV_USERS, pbot)
+from SpideyRobot.utils import formatter
 
-from SpideyRobot import dispatcher, SUDO_USERS, OWNER_USERNAME, OWNER_ID
-from SpideyRobot.modules.helper_funcs.extraction import extract_user
-from SpideyRobot.modules.helper_funcs.chat_status import bot_admin
-
-
-@bot_admin
-@run_async
-def sudopromote(bot: Bot, update: Update, args: List[str]):
-    message = update.effective_message
-    banner = update.effective_user
-    user_id = extract_user(message, args)
-    
-      if user_id:
-        message.reply_text("You don't seem to be referring to a user.")
-        return ""
-        
-    if int(user_id) == OWNER_ID:
-        message.reply_text("The specified user is my owner! No need add him to SUDO_USERS list!")
-        return ""
-        
-    if int(user_id) in SUDO_USERS:
-        message.reply_text("The user is already a sudo user.")
-        return ""
-    
-    with open("sudo_users.txt","a") as file:
-        file.write(str(user_id) + "\n")
-    
-    SUDO_USERS.append(user_id)
-    message.reply_text("Succefully added to SUDO user list!")
-        
-    return ""
-
-@bot_admin
-@run_async
-def sudodemote(bot: Bot, update: Update, args: List[str]):
-    message = update.effective_message
-    user_id = extract_user(message, args)
-    
-    if not user_id:
-        message.reply_text("You don't seem to be referring to a user.")
-        return ""
-
-    if int(user_id) == OWNER_ID:
-        message.reply_text("The specified user is my owner! I won't remove him from SUDO_USERS list!")
-        return ""
-    
-    if user_id not in SUDO_USERS:
-        message.reply_text("{} is not a sudo user".format(user_id))
-        return ""
-
-    users = [line.rstrip('\n') for line in open("sudo_users.txt")]
-
-    with open("sudo_users.txt","w") as file:
-        for user in users:
-            if not int(user) == user_id:
-                file.write(str(user) + "\n")
-
-    SUDO_USERS.remove(user_id)
-    message.reply_text("Succefully removed from SUDO user list!")
-    
-    return ""
-
+__mod_name__ = "Sudoers"
 
 __help__ = """
-*Bot owner only:*
- - /sudopromote: promotes the user to SUDO USER
- - /sudodemote: demotes the user from SUDO USER
+*Only for group owner:*
+ - /stats - To Check System Status.
+ - /gstats - Comming Soon 
+ - /gban - Comming Soon 
+ - /broadcast - Comming Soon 
+ - /update - Comming Soon 
 """
 
-__mod_name__ = "SUDO"
 
-SUDOPROMOTE_HANDLER = CommandHandler("sudopromote", sudopromote, pass_args=True, filters=Filters.user(OWNER_ID))
-SUDODEMOTE_HANDLER = CommandHandler("sudodemote", sudodemote, pass_args=True, filters=Filters.user(OWNER_ID))
+# Stats Module
 
-dispatcher.add_handler(SUDOPROMOTE_HANDLER)
-dispatcher.add_handler(SUDODEMOTE_HANDLER)
+
+async def bot_sys_stats():
+    bot_uptime = int(time.time() - bot_start_time)
+    cpu = psutil.cpu_percent()
+    mem = psutil.virtual_memory().percent
+    disk = psutil.disk_usage("/").percent
+    process = psutil.Process(os.getpid())
+    stats = f"""
+root@SpideyRobot:~$ Sophia 
+------------------
+UPTIME: {formatter.get_readable_time((bot_uptime))}
+BOT: {round(process.memory_info()[0] / 1024 ** 2)} MB
+CPU: {cpu}%
+RAM: {mem}%
+DISK: {disk}%
+"""
+    return stats
+
+#@pbot.on_message(
+#    filters.command("broadcast") & filters.user(DEV_USERS) & ~filters.edited
+#)
+#@capture_err
+#async def broadcast_message(_, message):
+#    if len(message.command) < 2:
+#        return await message.reply_text("**Usage**:\n/broadcast [MESSAGE]")
+#    text = message.text.split(None, 1)[1]
+#    sent = 0
+#    chats = []
+#    schats = await get_served_chats()
+#    for chat in schats:
+#        chats.append(int(chat["chat_id"]))
+#    for i in chats:
+#        try:
+#            await app.send_message(i, text=text)
+#            sent += 1
+#        except Exception:
+#            pass
+#    await message.reply_text(f"**Broadcasted Message In {sent} Chats.**")
