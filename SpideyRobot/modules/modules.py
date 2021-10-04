@@ -1,7 +1,7 @@
 import importlib
 import collections
 
-from SpideyRobotSpideyRobot import dispatcher, telethn
+from SpideyRobot import dispatcher, telethn
 from SpideyRobot.__main__ import (
     CHAT_SETTINGS,
     DATA_EXPORT,
