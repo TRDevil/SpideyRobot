@@ -1,9 +1,9 @@
 import html
 
-from GreysonBot import LOGGER, DRAGONS, TIGERS, WOLVES, dispatcher
-from GreysonBot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from GreysonBot.modules.log_channel import loggable
-from GreysonBot.modules.sql import reporting_sql as sql
+from SpideyRobot import LOGGER, DRAGONS, TIGERS, WOLVES, dispatcher
+from SpideyRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from SpideyRobot.modules.log_channel import loggable
+from SpideyRobot.modules.sql import reporting_sql as sql
 from telegram import Chat, InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (
