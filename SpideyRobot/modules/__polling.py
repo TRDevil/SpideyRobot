@@ -2,9 +2,9 @@ from pymongo import MongoClient
 from telethon import *
 from telethon.tl import *
 
-from GreysonBot import BOT_ID, MONGO_DB_URI
-from GreysonBot import telethn as tbot
-from GreysonBot.events import register
+from SpideyRobot import BOT_ID, MONGO_DB_URI
+from SpideyRobot import telethn as tbot
+from SpideyRobot.events import register
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)
@@ -394,7 +394,10 @@ async def stop(event):
 
 
 __help__ = """
-You can now send polls anonymously with Greyson
+You can now send polls anonymously with Spidey
+Here Is My Updates Channel : @PigasusUpdates
+Here Is Our Movie Channel : @DisneyCinemas
+
 Here is how you can do it:
 **Parameters** -
  ❍ poll-id - a poll id consists of an 5 digit random integer, this id is automatically removed from the system when you stop your previous poll
