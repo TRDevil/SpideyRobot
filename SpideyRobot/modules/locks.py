@@ -10,7 +10,7 @@ from telegram.utils.helpers import mention_html
 from alphabet_detector import AlphabetDetector
 
 import SpideyRobot.modules.sql.locks_sql as sql
-from SpideyRobotSpideyRobot import dispatcher, DRAGONS, LOGGER
+from SpideyRobot import dispatcher, DRAGONS, LOGGER
 from SpideyRobot.modules.disable import DisableAbleCommandHandler
 from SpideyRobot.modules.helper_funcs.chat_status import (
     can_delete,
