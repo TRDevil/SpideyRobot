@@ -1,9 +1,9 @@
 import html
 import random
-import GreysonBot.modules.truth_and_dare_string as truth_and_dare_string
-from GreysonBot import dispatcher
+import SpideyRobot.modules.truth_and_dare_string as truth_and_dare_string
+from SpideyRobot import dispatcher
 from telegram import ParseMode, Update, Bot
-from GreysonBot.modules.disable import DisableAbleCommandHandler
+from SpideyRobot.modules.disable import DisableAbleCommandHandler
 from telegram.ext import CallbackContext, run_async
 
 @run_async
