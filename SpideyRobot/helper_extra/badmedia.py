@@ -36,3 +36,7 @@ async def is_nsfw(event):
     elif r.get("is_nsfw") is False:
       is_nsfw = False
     return is_nsfw
+
+
+
+#SpideyRobot
