@@ -13,7 +13,7 @@ from telegram.ext.dispatcher import run_async
 from telegram.error import BadRequest
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from GreysonBot import (
+from SpideyRobot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -24,15 +24,15 @@ from GreysonBot import (
     dispatcher,
     sw,
 )
-from GreysonBot.__main__ import STATS, TOKEN, USER_INFO
-import GreysonBot.modules.sql.userinfo_sql as sql
-from GreysonBot.modules.disable import DisableAbleCommandHandler
-from GreysonBot.modules.sql.global_bans_sql import is_user_gbanned
-from GreysonBot.modules.sql.afk_sql import is_afk, check_afk_status
-from GreysonBot.modules.sql.users_sql import get_user_num_chats
-from GreysonBot.modules.helper_funcs.chat_status import sudo_plus
-from GreysonBot.modules.helper_funcs.extraction import extract_user
-from GreysonBot import telethn as YoneTelethonClient, TIGERS, DRAGONS, DEMONS
+from SpideyRobot.__main__ import STATS, TOKEN, USER_INFO
+import SpideyRobot.modules.sql.userinfo_sql as sql
+from SpideyRobot.modules.disable import DisableAbleCommandHandler
+from SpideyRobot.modules.sql.global_bans_sql import is_user_gbanned
+from SpideyRobot.modules.sql.afk_sql import is_afk, check_afk_status
+from SpideyRobot.modules.sql.users_sql import get_user_num_chats
+from SpideyRobot.modules.helper_funcs.chat_status import sudo_plus
+from SpideyRobot.modules.helper_funcs.extraction import extract_user
+from SpideyRobot import telethn as YoneTelethonClient, TIGERS, DRAGONS, DEMONS
 
 
 def no_by_per(totalhp, percentage):
@@ -278,7 +278,7 @@ def info(update: Update, context: CallbackContext):
         if spamwtc:
             text += "\n\n<b>This person is Spamwatched!</b>"
             text += f"\nReason: <pre>{spamwtc.reason}</pre>"
-            text += "\nAppeal at @SpamWatchSupport"
+            text += "\nAppeal at @PigasusSupport"
         else:
             pass
     except:
