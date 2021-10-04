@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, Integer, func, distinct
 
-from GreysonBot.modules.sql import BASE, SESSION
+from SpideyRobot.modules.sql import BASE, SESSION
 
 
 class Approvals(BASE):
