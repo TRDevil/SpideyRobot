@@ -69,4 +69,4 @@ envparse
 better_profanity
 nudepy
 motor
-cloudscrape
+cloudscraper
