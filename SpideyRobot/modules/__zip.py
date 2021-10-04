@@ -5,9 +5,9 @@ import zipfile
 from telethon import types
 from telethon.tl import functions
 
-from GreysonBot import TEMP_DOWNLOAD_DIRECTORY
-from GreysonBot import telethn as client
-from GreysonBot.events import register
+from SpideyRobot import TEMP_DOWNLOAD_DIRECTORY
+from SpideyRobot import telethn as client
+from SpideyRobot.events import register
 
 
 async def is_register_admin(chat, user):
