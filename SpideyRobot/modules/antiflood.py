@@ -4,15 +4,15 @@ import re
 
 from telegram import Message, Chat, Update, User, ChatPermissions
 
-from GreysonBot import TIGERS, WOLVES, dispatcher
-from GreysonBot.modules.helper_funcs.chat_status import (
+from SpideyRobot import TIGERS, WOLVES, dispatcher
+from SpideyRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     is_user_admin,
     user_admin,
     user_admin_no_reply,
 )
-from GreysonBot.modules.log_channel import loggable
-from GreysonBot.modules.sql import antiflood_sql as sql
+from SpideyRobot.modules.log_channel import loggable
+from SpideyRobot.modules.sql import antiflood_sql as sql
 from telegram.error import BadRequest
 from telegram.ext import (
     CallbackContext,
@@ -23,10 +23,10 @@ from telegram.ext import (
     run_async,
 )
 from telegram.utils.helpers import mention_html, escape_markdown
-from GreysonBot.modules.helper_funcs.string_handling import extract_time
-from GreysonBot.modules.connection import connected
-from GreysonBot.modules.helper_funcs.alternate import send_message
-from GreysonBot.modules.sql.approve_sql import is_approved
+from SpideyRobot.modules.helper_funcs.string_handling import extract_time
+from SpideyRobot.modules.connection import connected
+from SpideyRobot.modules.helper_funcs.alternate import send_message
+from SpideyRobot.modules.sql.approve_sql import is_approved
 
 FLOOD_GROUP = 3
 
