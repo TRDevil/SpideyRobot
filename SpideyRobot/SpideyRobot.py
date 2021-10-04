@@ -1,7 +1,6 @@
-# coded by @kunaldiwan
 
 """Triggers start command in pm and in groupchats"""
-def GreysonBot(**args):
+def SpideyRobot(**args):
     """New message."""
     pattern = args.get('pattern', None)
     r_pattern = r'^[/!]'
