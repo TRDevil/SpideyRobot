@@ -16,4 +16,4 @@ git commit -m "%commit_title%"
 git push
 
 
-:: Spidey To The World
+:: Spidey To The World !
