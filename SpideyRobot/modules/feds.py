@@ -42,16 +42,6 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html, mention_markdown
 
-# Hello bot owner, I spended for feds many hours of my life, Please don't remove this if you still respect MrYacha and peaktogoo and AyraHikari too
-# Federation by MrYacha 2018-2019
-# Federation rework by Mizukito Akito 2019
-# Federation update v2 by Ayra Hikari 2019
-# Time spended on feds = 10h by #MrYacha
-# Time spended on reworking on the whole feds = 22+ hours by @peaktogoo
-# Time spended on updating version to v2 = 26+ hours by @AyraHikari
-# Total spended for making this features is 68+ hours
-# LOGGER.info("Original federation module by MrYacha, reworked by Mizukito Akito (@peaktogoo) on Telegram.")
-
 FBAN_ERRORS = {
     "User is an administrator of the chat",
     "Chat not found",
@@ -546,9 +536,9 @@ def fed_admin(update: Update, context: CallbackContext):
 
     members = sql.all_fed_members(fed_id)
     if len(members) == 0:
-        text += "\n🔱 There are no admins in this federation"
+        text += "\n👮 There are no admins in this federation"
     else:
-        text += "\n🔱 Admin:\n"
+        text += "\n👮 Admin:\n"
         for x in members:
             user = bot.get_chat(x)
             text += " • {}\n".format(mention_html(user.id, user.first_name))
@@ -2368,7 +2358,7 @@ def fed_owner_help(update: Update, context: CallbackContext):
 @run_async
 def fed_admin_help(update: Update, context: CallbackContext):
     update.effective_message.reply_text(
-        """*🔱 Fed Admins:*
+        """*👮 Fed Admins:*
  • `/fban <user> <reason>`*:* Fed bans a user
  • `/unfban <user> <reason>`*:* Removes a user from a fed ban
  • `/fedinfo <fed_id>`*:* Information about the specified Federation
@@ -2394,7 +2384,7 @@ def fed_user_help(update: Update, context: CallbackContext):
     )
 
 
-__mod_name__ = "Federations"
+__mod_name__ = "💞Feds💞"
 
 __help__ = """
 Everything is fun, until a spammer starts entering your group, and you have to block it. Then you need to start banning more, and more, and it hurts.
@@ -2404,10 +2394,9 @@ You can even designate federation admins, so your trusted admin can ban all the 
 
 *Commands:*\n
 Feds are now divided into 3 sections for your ease. 
-❍ /fedownerhelp*:* Provides help for fed creation and owner only commands
-❍ /fedadminhelp*:* Provides help for fed administration commands
-❍ /feduserhelp*:* Provides help for commands anyone can use
-
+` /fedownerhelp*:* Provides help for fed creation and owner only commands
+` /fedadminhelp*:* Provides help for fed administration commands
+` /feduserhelp*:* Provides help for commands anyone can use
 """
 
 NEW_FED_HANDLER = CommandHandler("newfed", new_fed)
