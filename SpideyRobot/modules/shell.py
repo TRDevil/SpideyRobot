@@ -1,7 +1,7 @@
 import subprocess
 
-from GreysonBot import LOGGER, dispatcher
-from GreysonBot.modules.helper_funcs.chat_status import dev_plus
+from SpideyRobot import LOGGER, dispatcher
+from SpideyRobot.modules.helper_funcs.chat_status import dev_plus
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler
 from telegram.ext.dispatcher import run_async
