@@ -1,11 +1,11 @@
 import html
-from GreysonBot.modules.disable import DisableAbleCommandHandler
-from GreysonBot import dispatcher, DRAGONS
-from GreysonBot.modules.helper_funcs.extraction import extract_user
+from SpideyRobot.modules.disable import DisableAbleCommandHandler
+from SpideyRobot import dispatcher, DRAGONS
+from SpideyRobot.modules.helper_funcs.extraction import extract_user
 from telegram.ext import CallbackContext, CallbackQueryHandler, Filters, run_async
-import GreysonBot.modules.sql.approve_sql as sql
-from GreysonBot.modules.helper_funcs.chat_status import user_admin
-from GreysonBot.modules.log_channel import loggable
+import SpideyRobot.modules.sql.approve_sql as sql
+from SpideyRobot.modules.helper_funcs.chat_status import user_admin
+from SpideyRobot.modules.log_channel import loggable
 from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, Update
 from telegram.utils.helpers import mention_html
 from telegram.error import BadRequest
