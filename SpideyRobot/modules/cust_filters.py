@@ -15,25 +15,25 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html, escape_markdown
 
-from GreysonBot import dispatcher, LOGGER, DRAGONS
-from GreysonBot.modules.disable import DisableAbleCommandHandler
-from GreysonBot.modules.helper_funcs.handlers import MessageHandlerChecker
-from GreysonBot.modules.helper_funcs.chat_status import user_admin
-from GreysonBot.modules.helper_funcs.extraction import extract_text
-from GreysonBot.modules.helper_funcs.filters import CustomFilters
-from GreysonBot.modules.helper_funcs.misc import build_keyboard_parser
-from GreysonBot.modules.helper_funcs.msg_types import get_filter_type
-from GreysonBot.modules.helper_funcs.string_handling import (
+from SpideyRobot import dispatcher, LOGGER, DRAGONS
+from SpideyRobot.modules.disable import DisableAbleCommandHandler
+from SpideyRobot.modules.helper_funcs.handlers import MessageHandlerChecker
+from SpideyRobot.modules.helper_funcs.chat_status import user_admin
+from SpideyRobot.modules.helper_funcs.extraction import extract_text
+from SpideyRobot.modules.helper_funcs.filters import CustomFilters
+from SpideyRobot.modules.helper_funcs.misc import build_keyboard_parser
+from SpideyRobot.modules.helper_funcs.msg_types import get_filter_type
+from SpideyRobot.modules.helper_funcs.string_handling import (
     split_quotes,
     button_markdown_parser,
     escape_invalid_curly_brackets,
     markdown_to_html,
 )
-from GreysonBot.modules.sql import cust_filters_sql as sql
+from SpideyRobot.modules.sql import cust_filters_sql as sql
 
-from GreysonBot.modules.connection import connected
+from SpideyRobot.modules.connection import connected
 
-from GreysonBot.modules.helper_funcs.alternate import send_message, typing_action
+from SpideyRobot.modules.helper_funcs.alternate import send_message, typing_action
 
 HANDLER_GROUP = 10
 
