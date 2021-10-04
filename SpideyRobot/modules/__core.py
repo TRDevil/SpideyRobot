@@ -9,7 +9,7 @@ from SpideyRobot import OWNER_ID, DEV_USERS
 from SpideyRobot import TEMP_DOWNLOAD_DIRECTORY as path
 from SpideyRobot import TEMP_DOWNLOAD_DIRECTORY
 from datetime import datetime
-water = './SpideyRobot/resources/Spideybg.png'
+water = './SpideyRobot/resources/spiderbg.png'
 client = tbot
 
 @register(pattern=r"^/send ?(.*)")
