@@ -12,9 +12,9 @@ from tswift import Song
 from youtube_dl import YoutubeDL
 from youtubesearchpython import SearchVideos
 
-from GreysonBot.conf import get_str_key
-from GreysonBot.pyrogramee.pluginshelper import get_text, progress
-from GreysonBot import pbot
+from SpideyRobot.conf import get_str_key
+from SpideyRobot.pyrogramee.pluginshelper import get_text, progress
+from SpideyRobot import pbot
 
 GENIUS = get_str_key("GENIUS_API_TOKEN", None)
 
