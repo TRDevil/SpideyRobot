@@ -1,8 +1,8 @@
 import os
-from GreysonBot import telethn as tbot
+from SpideyRobot import telethn as tbot
 from geopy.geocoders import Nominatim
-from GreysonBot.events import register
-from GreysonBot import *
+from SpideyRobot.events import register
+from SpideyRobot import *
 from telethon import *
 from telethon.tl import *
 
