@@ -2,8 +2,8 @@ import random
 import threading
 from typing import Union
 
-from GreysonBot.modules.helper_funcs.msg_types import Types
-from GreysonBot.modules.sql import BASE, SESSION
+from SpideyRobot.modules.helper_funcs.msg_types import Types
+from SpideyRobot.modules.sql import BASE, SESSION
 from sqlalchemy import BigInteger, Boolean, Column, Integer, String, UnicodeText
 
 DEFAULT_WELCOME = "Hey {first}, how are you?"
