@@ -6,3 +6,5 @@ echo Pulling from branch:
 git branch
 echo.
 git pull
+
+#Spidey
