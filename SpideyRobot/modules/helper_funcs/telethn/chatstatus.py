@@ -1,5 +1,5 @@
-from GreysonBot.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
-from GreysonBot import DRAGONS
+from SpideyRobot.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
+from SpideyRobot import DRAGONS
 from telethon.tl.types import ChannelParticipantsAdmins
 
 
