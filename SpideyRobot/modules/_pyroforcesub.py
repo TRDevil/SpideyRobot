@@ -1,6 +1,3 @@
-
-# credits @InukaAsith, @Mr_dark_prince
-
 import logging
 import time
 
@@ -13,9 +10,9 @@ from pyrogram.errors.exceptions.bad_request_400 import (
 )
 from pyrogram.types import ChatPermissions, InlineKeyboardButton, InlineKeyboardMarkup
 
-from GreysonBot import DRAGONS as SUDO_USERS
-from GreysonBot import pbot
-from GreysonBot.modules.sql_extended import forceSubscribe_sql as sql
+from SpideyRobot import DRAGONS as SUDO_USERS
+from SpideyRobot import pbot
+from SpideyRobot.modules.sql_extended import forceSubscribe_sql as sql
 
 logging.basicConfig(level=logging.INFO)
 
@@ -43,7 +40,7 @@ def _onUnMuteRequest(client, cb):
                 except UserNotParticipant:
                     client.answer_callback_query(
                         cb.id,
-                        text=f"❗ Join our @{channel} channel and press 'UnMute Me' button.",
+                        text=f"❗ Join our @{channel} channel and press 'UnMute Me' button. Also join My Updates PigasusUpdates",
                         show_alert=True,
                     )
             else:
@@ -65,7 +62,7 @@ def _onUnMuteRequest(client, cb):
             else:
                 client.answer_callback_query(
                     cb.id,
-                    text="❗ Warning! Don't press the button when you cn talk.",
+                    text="❗ Warning! Don't press the button when you can't talk.",
                     show_alert=True,
                 )
 
@@ -87,7 +84,7 @@ def _check_member(client, message):
             except UserNotParticipant:
                 try:
                     sent_message = message.reply_text(
-                        "Welcome {} 🙏 \n **You havent joined our @{} Channel yet** ⚡ \n \nPlease Join [Our Channel](https://t.me/{}) and hit the **UNMUTE ME** Button. \n \n ".format(
+                        "Welcome {}\n **You havent joined our @{} Channel yet** ⚡ \n \nPlease Join [Our Channel](https://t.me/{}) and hit the **UnMute Me** Button. \n \n ".format(
                             message.from_user.mention, channel, channel
                         ),
                         disable_web_page_preview=True,
@@ -197,4 +194,4 @@ __help__ = """
   💡If you disable fsub, you need to set again for working.. /fsub {channel username} 
  ❍ /fsub clear - To unmute all members who muted by me.
 """
-__mod_name__ = "Force Subscribe⚡"
+__mod_name__ = "Force Subscribe"
