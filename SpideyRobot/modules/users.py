@@ -11,10 +11,10 @@ from telegram.ext import (
     run_async,
 )
 
-import GreysonBot.modules.sql.users_sql as sql
-from GreysonBot import DEV_USERS, LOGGER, OWNER_ID, dispatcher
-from GreysonBot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
-from GreysonBot.modules.sql.users_sql import get_all_users
+import SpideyRobot.modules.sql.users_sql as sql
+from SpideyRobot import DEV_USERS, LOGGER, OWNER_ID, dispatcher
+from SpideyRobot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
+from SpideyRobot.modules.sql.users_sql import get_all_users
 
 USERS_GROUP = 4
 CHAT_GROUP = 5
