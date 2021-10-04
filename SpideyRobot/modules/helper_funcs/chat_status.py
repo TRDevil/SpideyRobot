@@ -50,7 +50,7 @@ def is_user_admin(chat: Chat, user_id: int, member: ChatMember = None) -> bool:
             except KeyError:
                 # keyerror happend means cache is deleted,
                 # so query bot api again and return user status
-                # while saving it in cache for future useage...
+                # while saving it in cache for future useage....
                 chat_admins = dispatcher.bot.getChatAdministrators(chat.id)
                 admin_list = [x.user.id for x in chat_admins]
                 ADMIN_CACHE[chat.id] = admin_list
