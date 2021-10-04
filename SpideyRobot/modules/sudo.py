@@ -18,7 +18,7 @@ def sudopromote(bot: Bot, update: Update, args: List[str]):
     banner = update.effective_user
     user_id = extract_user(message, args)
     
-      if not user_id:
+      if user_id:
         message.reply_text("You don't seem to be referring to a user.")
         return ""
         
