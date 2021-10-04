@@ -6,8 +6,8 @@ import time
 import uuid
 from io import BytesIO
 
-import GreysonBot.modules.sql.feds_sql as sql
-from GreysonBot import (
+import SpideyRobotSpideyRobot.modules.sql.feds_sql as sql
+from SpideyRobotSpideyRobot import (
     EVENT_LOGS,
     LOGGER,
     SUPPORT_CHAT,
@@ -17,15 +17,15 @@ from GreysonBot import (
     WOLVES,
     dispatcher,
 )
-from GreysonBot.modules.disable import DisableAbleCommandHandler
-from GreysonBot.modules.helper_funcs.alternate import send_message
-from GreysonBot.modules.helper_funcs.chat_status import is_user_admin
-from GreysonBot.modules.helper_funcs.extraction import (
+from SpideyRobot.modules.disable import DisableAbleCommandHandler
+from SpideyRobot.modules.helper_funcs.alternate import send_message
+from SpideyRobot.modules.helper_funcs.chat_status import is_user_admin
+from SpideyRobot.modules.helper_funcs.extraction import (
     extract_unt_fedban,
     extract_user,
     extract_user_fban,
 )
-from GreysonBot.modules.helper_funcs.string_handling import markdown_parser
+from SpideyRobot.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
