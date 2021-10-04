@@ -6,7 +6,7 @@ from telethon.errors import ChatAdminRequiredError, UserAdminInvalidError
 from telethon.tl.functions.channels import EditBannedRequest
 from telethon.tl.types import ChatBannedRights, ChannelParticipantsAdmins
 
-from GreysonBot import telethn, OWNER_ID, DEV_USERS, DRAGONS, DEMONS
+from SpideyRobot import telethn, OWNER_ID, DEV_USERS, DRAGONS, DEMONS
 
 # =================== CONSTANT ===================
 
@@ -114,7 +114,7 @@ async def zombies(event):
     
     
 from telethon.tl.types import UserStatusLastMonth, UserStatusLastWeek, ChatBannedRights
-from GreysonBot.events import register
+from SpideyRobot.events import register
 from telethon import *
 from telethon.tl.functions.channels import (EditBannedRequest)
                                             
