@@ -64,12 +64,12 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
-# Copy Python Requirements to /root/GreysonBot
-RUN git clone -b shiken https://github.com/DevelopedBots/GreysonBot /root/GreysonBot
-WORKDIR /root/GreysonBot
+# Copy Python Requirements to /root/SpideyRobot
+RUN git clone -b shiken https://github.com/DCOwnerNo1/SpideyRobot /root/SpideyRobot
+WORKDIR /root/SpideyRobot
 
-#Copy config file to /root/GreysonBot/GreysonBot
-COPY ./GreysonBot/sample_config.py ./GreysonBot/config.py* /root/GreysonBot/GreysonBot/
+#Copy config file to /root/SpideyRobot/SpideyRobot
+COPY ./SpideyRobot/sample_config.py ./SpideyRobot/config.py* /root/SpideyRobot/SpideyRobot/
 
 ENV PATH="/home/bot/bin:$PATH"
 
@@ -77,4 +77,4 @@ ENV PATH="/home/bot/bin:$PATH"
 RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","GreysonBot"]
+CMD ["python3","-m","SpideyRobot"]
