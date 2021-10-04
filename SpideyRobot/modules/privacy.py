@@ -1,18 +1,13 @@
-# Hello Bot Owner, I spent too much time to code Privacy string .
-# Don't Remove this string if you respect Kunal and Jimmooooo .
-# Main Credits goes to @KunalDiwan for coding this .
-# Please do not change this string with your name .
-
 from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, Update, Bot
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import CommandHandler, CallbackQueryHandler, run_async
 
-from GreysonBot import dispatcher, DRAGONS, DEV_USERS
+from SpideyRobot import dispatcher, DRAGONS, DEV_USERS
 
 PRIVACY_P_TEXT = """
-* Our contact details * \n*Name*: Greyson bot \n*Telegram*: https://t.me/GreysonChats
-\n\nThe bot has been made to *protect* and preserve *privacy* as best as possible. \nThe proper functioning of the bot is defined as the data required for all the commands in the /help to work as expected.
-\n\nOur privacy policy may change from time to time. If we make any material changes to our policies, we will place a prominent notice on https://t.me/GrasyonNews.
+* Our contact details * \n*Name*: SpideyRobot bot \n*Telegram*: https://t.me/PigasusSupport
+\n\nThe bot has been made to *protect* and preserve *privacy* as best as possible. Special Credits For Coding This For Kunal and Jimmooooo \nThe proper functioning of the bot is defined as the data required for all the commands in the /help to work as expected.
+\n\nOur privacy policy may change from time to time. If we make any material changes to our policies, we will place a prominent notice on https://t.me/PigasusUpdates.
 """
 
 PRIVACY_STRING = """Select one of the below options for more information about how the bot handles your privacy."""
@@ -60,13 +55,14 @@ def privacy(update, context):
             )
 
 @run_async
-def greyson_policy_callback(update, context):
+def spidey_policy_callback(update, context):
     query = update.callback_query
     if query.data == "policy_":
         query.message.edit_text(
-            text=""" * Our contact details * \n*Name*: Greyson bot \n*Telegram*: https://t.me/GreysonChats 
-\nThe bot has been made to *protect* and preserve *privacy* as best as possible. \nThe proper functioning of the bot is defined as the data required for all the commands in the /help to work as expected.
-\nOur privacy policy may change from time to time. If we make any material changes to our policies, we will place a prominent notice on https://t.me/GraysonNews.""",
+            text="""* Our contact details * \n*Name*: SpideyRobot bot \n*Telegram*: https://t.me/PigasusSupport
+\n\nThe bot has been made to *protect* and preserve *privacy* as best as possible. Special Credits For Coding This For Kunal and Jimmooooo \nThe proper functioning of the bot is defined as the data required for all the commands in the /help to work as expected.
+\n\nOur privacy policy may change from time to time. If we make any material changes to our policies, we will place a prominent notice on https://t.me/PigasusUpdates.
+""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -251,7 +247,7 @@ def greyson_policy_callback(update, context):
         )
 
 @run_async
-def greyson_cancel_callback(update, context):
+def spidey_cancel_callback(update, context):
     query = update.callback_query
     if query.data == "cancel_": 
         query.message.edit_text(
@@ -269,8 +265,8 @@ The privacy module allows you to see the bot privacy policy, as well as view and
 - /privacy: Provides all the tools relating to privacy, such as listing the privacy policy, retrieving, and deleting your data.
 """
 
-policy_callback_handler = CallbackQueryHandler(greyson_policy_callback, pattern=r"policy_")
-cancel_callback_handler = CallbackQueryHandler(greyson_cancel_callback, pattern=r"cancel_")
+policy_callback_handler = CallbackQueryHandler(spidey_policy_callback, pattern=r"policy_")
+cancel_callback_handler = CallbackQueryHandler(spidey_cancel_callback, pattern=r"cancel_")
 
 privacy_handler = CommandHandler("privacy", privacy)
 
