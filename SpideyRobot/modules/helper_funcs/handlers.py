@@ -1,6 +1,6 @@
-import GreysonBot.modules.sql.blacklistusers_sql as sql
-from GreysonBot import ALLOW_EXCL
-from GreysonBot import DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES
+import SpideyRobot.modules.sql.blacklistusers_sql as sql
+from SpideyRobot import ALLOW_EXCL
+from SpideyRobot import DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES
 
 from telegram import Update
 from telegram.ext import CommandHandler, MessageHandler, RegexHandler, Filters
