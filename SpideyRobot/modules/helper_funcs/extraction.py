@@ -1,7 +1,7 @@
 from typing import List, Optional
 
-from GreysonBot import LOGGER
-from GreysonBot.modules.users import get_user_id
+from SpideyRobot import LOGGER
+from SpideyRobot.modules.users import get_user_id
 from telegram import Message, MessageEntity
 from telegram.error import BadRequest
 
