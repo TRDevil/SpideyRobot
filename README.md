@@ -54,6 +54,6 @@ If all works well, bot should send message to the **MESSAGE_DUMP** Group .
 
 [![DCOWNER](https://img.shields.io/badge/DC-OWNER-red?style=for-the-badge&logo=appveyor)](https://t.me/DreamerNo1) 
 
-##### Powered by [@PigasusUpdates](https://telegram.dog/PigasusUpdates) 💖
+##### Powered by [@PigasusUpdates](https://telegram.dog/PigasusUpdates)
 
 
