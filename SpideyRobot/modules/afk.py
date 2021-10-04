@@ -1,12 +1,12 @@
 import random, html
 
-from GreysonBot import dispatcher
-from GreysonBot.modules.disable import (
+from SpideyRobot import dispatcher
+from SpideyRobot.modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
 )
-from GreysonBot.modules.sql import afk_sql as sql
-from GreysonBot.modules.users import get_user_id
+from SpideyRobot.modules.sql import afk_sql as sql
+from SpideyRobot.modules.users import get_user_id
 from telegram import MessageEntity, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, Filters, MessageHandler, run_async
