@@ -14,9 +14,9 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-import GreysonBot.modules.sql.global_bans_sql as sql
-from GreysonBot.modules.sql.users_sql import get_user_com_chats
-from GreysonBot import (
+import SpideyRobot.modules.sql.global_bans_sql as sql
+from SpideyRobot.modules.sql.users_sql import get_user_com_chats
+from SpideyRobot import (
     DEV_USERS,
     EVENT_LOGS,
     OWNER_ID,
@@ -30,16 +30,16 @@ from GreysonBot import (
     sw,
     dispatcher,
 )
-from GreysonBot.modules.helper_funcs.chat_status import (
+from SpideyRobot.modules.helper_funcs.chat_status import (
     is_user_admin,
     support_plus,
     user_admin,
 )
-from GreysonBot.modules.helper_funcs.extraction import (
+from SpideyRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from GreysonBot.modules.helper_funcs.misc import send_to_list
+from SpideyRobot.modules.helper_funcs.misc import send_to_list
 
 GBAN_ENFORCE_GROUP = 6
 
