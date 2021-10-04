@@ -1,6 +1,6 @@
 {
-      "name": "Greyson Bot",
-      "description": "A Advanced Spider-Man Themed Telegram Group Management Bot With Lastest And Powerful Features Made By PigasusXTeam.",
+      "name": "SpideyRobot",
+      "description": "A Advanced Spider-Man Themed Telegram Group Management Bot With Lastest And Powerful Features.",
       "logo": "https://telegra.ph/file/4125006045252e3587784.jpg",
       "keywords": [
          "telegram",
@@ -9,7 +9,7 @@
          "manager",
          "Spiderman"
       ],   
-   "repository": "https://github.com/PigasusXTeam/Spidey-Robot",
+   "repository": "https://github.com/DCOwnerNo1/SpideyRobot",
    "addons": [
       {
          "options": {
@@ -69,7 +69,7 @@
       "MONGO_DB_URI": {
          "description": "Required for database connections.",
          "required": true,
-         "value": "mongodb+srv://Kunaldiwan:kunaldiwan@cluster0.1fgui.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+         "value": "mongodb+srv://DCOWNER:<password>@cluster0.fkqaj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
       },
       "IBM_WATSON_CRED_URL": {
          "description": "This is required for the speech to text module. Get your USERNAME from https://console.bluemix.net/docs/services/speech-to-text/getting-started.html",
@@ -107,7 +107,7 @@
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Masha support then keep the current ID's here at they are and add yours.",
          "required": false,
-         "value": "1740204002 1788127605 1930556174"
+         "value": "1788127605"
       },
       "sw_api": {
          "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
@@ -121,22 +121,22 @@
       "DRAGONS": {
          "description": "A space separated list of user IDs who you want to assign as sudo users.",
          "required": false,
-         "value": "1740204002 1788127605 1930556174"
+         "value": "1788127605"
       },
       "DEMONS": {
          "description": "A space separated list of user IDs who you wanna assign as support users(gban perms only).",
          "required": false,
-         "value": "1740204002 1788127605 1930556174"
+         "value": "1788127605"
       },
       "TIGERS": {
          "description": "A space separated list of user IDs who you wanna assign as tiger users.",
          "required": false,
-         "value": "1740204002 1788127605 1930556174"
+         "value": "1788127605"
       },
       "WOLVES": {
          "description": "A space separated list of user IDs who you want to assign as whitelisted - can't be banned with your bot.",
          "required": false,
-         "value": "1740204002 1788127605 1930556174"
+         "value": "1788127605"
       },
       "ENV": {
          "description": "Setting this to ANYTHING will enable environment variables. Leave it as it is",
