@@ -1,4 +1,3 @@
-
 import importlib 
 import time
 import re
@@ -25,7 +24,7 @@ from SpideyRobot import (
     updater,
 )
 
-# needed to dynamically load modules
+# Needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
 from SpideyRobot.modules import ALL_MODULES
 from SpideyRobot.modules.helper_funcs.chat_status import is_user_admin
