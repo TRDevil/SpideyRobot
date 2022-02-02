@@ -37,7 +37,7 @@
 </p>
 
 ### Deploy to Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/dcownerno1/SpideyRobot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/log-afk-xd/SpideyRobot)
 
 If all works well, bot should send message to the **MESSAGE_DUMP** Group .
 
